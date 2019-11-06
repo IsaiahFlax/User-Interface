@@ -49,18 +49,162 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+	font-family: 'Bangers', cursive;
+	
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+#container{
+	width:1024px;
+	height: 1536px;
+	margin: 0 auto;
+	padding: 0px 
+}
+
+header{
+	width:100%;
+	padding:0px 20px 60px 40px;
+	text-align:center;
+	padding-top:60px;
+	border-bottom: 1px solid black;
+}
+
+header nav{
+	position: fixed;
+	top:0;
+	left:0;
+	background: white;
+	width:90%;
+	z-index: 1;
+	transition-property:padding;
+	transition-duration:0.5s;
+	padding:0px 0;
+}
+
+header nav a{
+	display:inline-block;
+	color: gray;
+	text-decoration:none;
+	font-weight:400;
+	padding:40px;
+	
+}
+/*
+nav a:hover{
+	transition-property: color, font-weight;
+	transition-duration: 0.5s, 0.5s;
+	color: black;
+	font-weight:bold;
+}
+*/
+.logo{
+	display:inline-block;
+	background: url("../img/logo.png");
+	width:183px;
+	height:36px;
+	margin-left:10px;
+	vertical-align: middle;
+}
+
+header .header-text{
+	display:inline-block;
+	font-size: 78px;
+	text-align:center;
+	vertical-align: middle;
+	margin-top:50px;
+	margin-right:60px;
+}
+
+.header-image{
+	display:inline-block;
+	background: url("../img/header-img.png");
+	vertical-align: middle;
+	width:379px;
+	height:379px;
+	margin-left:60px;
+	margin-top:50px;
+}
+
+.button{
+	display:block;
+	width:180px;
+	height:30px;
+	font-size:20px;
+	border: 1px solid black;
+	padding:5px 20px;
+	margin:0 auto;
+	margin-top:30px;
+}
+
+.button:hover{
+	cursor:pointer;
+}
+
+
+.top-section{
+	padding:40px 0;
+	font-size:18px;
+}
+
+.top-section div{
+	display:inline-block;
+	width:500px;
+	margin:0 auto;
+	margin-right:10px;
+}
+
+.top-section div:last-child{
+	margin-right:0;
+}
+
+.middle-section img{
+	width:100%;
+}
+
+.middle-img{
+	background: url("../img/mid-page-accent.jpg");
+	height:182px;
+	width:100%;
+}
+
+.bottom-section{
+	padding:40px 0;
+	font-size:18px;
+	border-bottom:1px solid black;
+}
+
+.bottom-section div{
+	display:inline-block;
+	width:330px;
+	margin:0 auto;
+	margin-right:10px;
+}
+
+.bottom-section div:last-child{
+	margin-right:0;
+}
+
+.contact{
+	padding:40px 0;
+}
+
+footer{
+	padding:40px 0;
+	height:150px;
+}
+
+
+footer h6{
+	text-align:center;
+}
